@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  padding: 15px;
+  a {
+    text-decoration: none;
+    color: #5f6368;
+  }
+}
+
+.head_link {
+  margin-left: 7px;
+  margin-right: 80px;
+  a {
+    color: blue;
+  }
+}
+
+.nav_links li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px;
+  padding-inline-start: 0;
+  margin-left: 25px;
+}
+
+.header_hr {
+  border: 0;
+  border-bottom: 1px solid rgb(247, 247, 247);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 0;
+}
+
+.paragraph {
+  text-align: center;
+  margin-bottom: 15px;
+  h1 {
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin-top: 25px;
+    padding: 10px;
+    word-spacing: 2px;
+  }
+  p span {
+    display: block;
+    font-size: 14px;
+  }
+}
+
+// Slides
+
+.second-image {
+  display: none;
+}
+
+.first,
+.second {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+
+  .text {
+    margin-left: 10px;
+    margin-top: -130px;
+    padding: 30px;
+    h4 {
+      font-weight: 100;
+    }
+    .data {
+      p {
+        margin-top: 28px;
+      }
+      p span {
+        display: block;
+        font-size: 12px;
+      }
+    }
+    .link {
+      margin-top: 20px;
+      font-size: 12px;
+      a {
+        color: blue;
+      }
+    }
+  }
+}
+
+// Arrow Buttons
+
+.next-btn,
+.prev-btn {
+  background-color: #eeee;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  font-size: 13px;
+  z-index: 100;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+  background-color: lightgray;
+}
+
+.prev-btn {
+  left: 0px;
+  margin-left: 8%;
+}
+
+.next-btn {
+  right: 0;
+  margin-right: 6%;
+}
+
+// Navigation dots
+.navigation-dots {
+  display: flex;
+  height: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-dot {
+  height: 6px;
+  width: 6px;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.active {
+  background-color: #333;
+}
+
+.inactive {
+  background-color: #eee;
+}
+
+.slider {
+  position: relative;
+  margin-left: 13%;
+  width: 75%;
+}
+
+// Content
+
+.square {
+  max-width: 860px;
+  margin: 30px auto;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid rgba(146, 144, 144, 0.1);
+  overflow: hidden;
+}
+
+.sub-square {
+  padding: 2px;
+}
+
+.data-photo {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-right: 11px;
+}
+
+.line {
+  padding: 4px 0 8px 0;
+  margin-top: 7px;
+  font-weight: normal;
+  color: gray;
+}
+
+.sub-line {
+  padding: 4px 0 8px 0;
+  font-weight: normal;
+  color: lightgray;
+}
+
+.last-line {
+  margin-top: 20px;
+  font-weight: normal;
+  color: blue;
+}
+
+.break {
+  border: 0;
+  height: 0;
+  border-bottom: 1px solid rgba(146, 144, 144, 0.1);
+}
+
+.material-icons-sharp {
+  color: blue;
+  cursor: pointer;
+  float: right;
+  font-size: medium;
+  margin: -11px 15px 0 0;
+}
+
+// Footer Section
+
+.footer {
+  height: 700px;
+  background-color: #fafafa;
+}
+
+.ft-title {
+  text-align: center;
+  font-weight: normal;
+  padding: 40px;
+}
+
+.container {
+  margin: 20px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-01 {
+  background-color: #fff;
+  position: relative;
+  flex: 1;
+  max-width: 150px;
+  height: 120px;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 50%;
+  margin: 25px 20px 25px 30px;
+}
+
+.ft-txt {
+  text-align: center;
+  font-size: small;
+}
+
+.ft-link {
+  font-size: smaller;
+  text-align: end;
+  margin-top: 110px;
+  margin-right: 280px;
+  margin-bottom: 20px;
+}
+
+.material-icons-two-tone {
+  vertical-align: bottom;
+  font-size: 18px;
+}
+
+.container-1 {
+  margin-top: 40px;
+  margin-left: 100px;
+  font-size: small;
+  width: auto;
+  display: flex;
+}
+
+.box-1 {
+  flex: 1;
+  text-align: center;
+}
+
+.links {
+  padding-right: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.box-2 {
+  flex: 3;
+  padding: 5px;
+}
+
+.box-3 {
+  flex: 2;
+}
+
+.fa-question-circle {
+  padding-right: 13px;
+}
+
+.ft-logo {
+  width: 60px;
+  height: 100%;
+}
